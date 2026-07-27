@@ -56,6 +56,14 @@ a { text-decoration: none; color: inherit; }
 
 .nav a:hover { color: var(--red); }
 
+.nav a.nav-destaque {
+  background: var(--red);
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.nav a.nav-destaque:hover { color: var(--white); background: #b10f0f; }
+
 /* Hero */
 .hero {
   background: linear-gradient(135deg, var(--black) 0%, #262626 100%);
