@@ -181,6 +181,52 @@ a { text-decoration: none; color: inherit; }
 .schedule .tag.yellow { color: #ffd93d; }
 .schedule .tag.pink { color: #ff5fa2; }
 
+/* Grade em cards (mobile) */
+.schedule-mobile {
+  display: none;
+  margin-bottom: 32px;
+}
+
+.day-group {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.day-title {
+  color: var(--red);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #2a2a2a;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.time-row:last-child { border-bottom: none; }
+
+.time-row .time {
+  color: #cccccc;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.time-row .tag.red { color: #ff4d4d; }
+.time-row .tag.yellow { color: #ffd93d; }
+.time-row .tag.pink { color: #ff5fa2; }
+
 .staff {
   display: flex;
   gap: 20px;
@@ -310,5 +356,11 @@ a { text-decoration: none; color: inherit; }
   }
   .hero h1 {
     font-size: 1.7rem;
+  }
+  .table-wrap {
+    display: none;
+  }
+  .schedule-mobile {
+    display: block;
   }
 }
